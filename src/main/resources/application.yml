@@ -4,7 +4,6 @@ spring:
     username: user
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,3 +13,13 @@ spring:
         format_sql: true
 app:
   signin-key: ABCDEF12345678FEDCBAABCDEF12345678FEDCBAABCDEF12345678FEDCBAABCDEF12345678FEDCBAABCDEF12345678FEDCBA
+logging:
+  level:
+    org:
+      springframework:
+        ws:
+          server:
+            MessageTracing: DEBUG
+          client:
+            MessageTracing: DEBUG
+

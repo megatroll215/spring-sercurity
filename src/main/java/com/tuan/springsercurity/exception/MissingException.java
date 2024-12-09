@@ -1,3 +1,4 @@
+
 package com.tuan.springsercurity.exception;
 
 public class MissingException extends RuntimeException{

@@ -4,7 +4,6 @@ import com.tuan.springsercurity.dtos.response.UserDTO;
 import com.tuan.springsercurity.repository.UserRepository;
 import com.tuan.springsercurity.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

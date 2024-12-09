@@ -40,17 +40,17 @@ public class PublicController
 
     @PostMapping("/signin")
     public ResponseEntity<?>  signin(@RequestBody@Valid SignInRequest request) {
-    return ResponseEntity.status(HttpStatus.OK).body(authenticationService.signIn(request));
-}
+        return ResponseEntity.status(HttpStatus.OK).body(authenticationService.signIn(request));
+    }
     @PostMapping("/refresh-token")
     public ResponseEntity<?>  refreshToken(@RequestBody@Valid RefreshTokenRequest request) {
-    return ResponseEntity.status(HttpStatus.OK).body(authenticationService.refreshToken(request));
-}
+        return ResponseEntity.status(HttpStatus.OK).body(authenticationService.refreshToken(request));
+    }
 
     @GetMapping("/me")
     public ResponseEntity<?> me()
     {
-       var user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        var user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return ResponseEntity.status(HttpStatus.OK).body(user);
 
     }
