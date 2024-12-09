@@ -64,7 +64,7 @@ public class ExceptionHandler {
     public ResponseEntity<Error> invalidRequestEx(MethodArgumentNotValidException ex)
     {
         ObjectNode errors = Creator.createObject();
-         ex.getBindingResult()
+        ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
                 .forEach(x->

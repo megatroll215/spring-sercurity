@@ -51,7 +51,8 @@ public class SecurityConfiguration {
                                         "/api/v1/auth/**"
                                         ,"/v3/api-docs/**"
                                         , "/swagger-ui/**"
-                                        , "/swagger-ui.html")
+                                        , "/swagger-ui.html"
+                                        ,"/ws/**")
                                         .permitAll()
                                         .requestMatchers("/api/v1/admin/**").hasAnyAuthority(Role.ADMIN.name())
                                         .requestMatchers("/api/v1/user/**").hasAnyAuthority(Role.USER.name())
